@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Card: View {
-    var size: Int
     var banner: String
     var title: String
     var avatar: String
@@ -19,7 +18,7 @@ struct Card: View {
             Image(banner)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: CGFloat(self.size))
+                .frame(width: UIScreen.main.bounds.width / 2 - 22)
             
             Text(title)
             HStack {

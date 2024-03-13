@@ -12,24 +12,19 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView() {
                 // 关注
                 TabView(selection: $active) {
                     HStack(alignment: .top, spacing: 4) {
                         VStack {
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
-                            Card(size: 180, banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
+                            Card(banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
                         }
                         VStack {
-                            Card(size: 180, banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
-                            Card(size: 180, banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
                         }
                     }
                     .padding(.horizontal, 8)
@@ -39,11 +34,11 @@ struct ContentView: View {
                     // 关注
                     HStack(alignment: .top, spacing: 4) {
                         VStack {
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
                         }
                         VStack {
-                            Card(size: 180, banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
                         }
                     }
                     .padding(.horizontal, 8)
@@ -53,15 +48,15 @@ struct ContentView: View {
                     // 附近
                     HStack(alignment: .top, spacing: 4) {
                         VStack {
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
-                            Card(size: 180, banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
-                            Card(size: 180, banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
+                            Card(banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
+                            Card(banner: "image-4", title: "有绵羊啊", avatar: "avatar", userName: "奇怪")
                         }
                         VStack {
-                            Card(size: 180, banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
-                            Card(size: 180, banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
-                            Card(size: 180, banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
+                            Card(banner: "image-2", title: "我的独家记忆", avatar: "avatar", userName: "赵六")
+                            Card(banner: "image-1", title: "风景很不错", avatar: "avatar", userName: "张三")
+                            Card(banner: "image-3", title: "看看我的车", avatar: "avatar", userName: "李四")
                         }
                     }
                     .padding(.horizontal, 8)
@@ -69,8 +64,10 @@ struct ContentView: View {
                     .tag(3)
                 }
                 .tabViewStyle(.page)
-                // .frame(minHeight: UIScene.main.bounds.height)
-                .frame(height: 1800)
+//                 .frame(minHeight: UIScene.main.bounds.height)
+                .frame(minHeight: UIScreen.main.bounds.height)
+                
+//                .frame(height: 1800)
             }
             .toolbar {
                 // 标签
