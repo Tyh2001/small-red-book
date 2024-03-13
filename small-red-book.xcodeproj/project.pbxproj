@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		26C6BE632BA1E9DD00D0251C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE622BA1E9DD00D0251C /* TabView.swift */; };
+		26C6BE682BA1F00000D0251C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE672BA1F00000D0251C /* HomeView.swift */; };
+		26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE692BA1F08100D0251C /* FindView.swift */; };
+		26C6BE6C2BA1F0DD00D0251C /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE6B2BA1F0DD00D0251C /* FollowView.swift */; };
+		26C6BE6E2BA1F13400D0251C /* VicinityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE6D2BA1F13400D0251C /* VicinityView.swift */; };
 		9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C223B2BA18435009951DC /* small_red_bookApp.swift */; };
 		9D6C223E2BA18435009951DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C223D2BA18435009951DC /* ContentView.swift */; };
 		9D6C22402BA18437009951DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6C223F2BA18437009951DC /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		26C6BE622BA1E9DD00D0251C /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		26C6BE672BA1F00000D0251C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		26C6BE692BA1F08100D0251C /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		26C6BE6B2BA1F0DD00D0251C /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		26C6BE6D2BA1F13400D0251C /* VicinityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicinityView.swift; sourceTree = "<group>"; };
 		9D6C22382BA18435009951DC /* small-red-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "small-red-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6C223B2BA18435009951DC /* small_red_bookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = small_red_bookApp.swift; sourceTree = "<group>"; };
 		9D6C223D2BA18435009951DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26C6BE642BA1EFB700D0251C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26C6BE662BA1EFE200D0251C /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26C6BE652BA1EFCF00D0251C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26C6BE662BA1EFE200D0251C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				26C6BE672BA1F00000D0251C /* HomeView.swift */,
+				26C6BE6D2BA1F13400D0251C /* VicinityView.swift */,
+				26C6BE6B2BA1F0DD00D0251C /* FollowView.swift */,
+				26C6BE692BA1F08100D0251C /* FindView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9D6C222F2BA18435009951DC = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +91,8 @@
 		9D6C223A2BA18435009951DC /* small-red-book */ = {
 			isa = PBXGroup;
 			children = (
+				26C6BE652BA1EFCF00D0251C /* Components */,
+				26C6BE642BA1EFB700D0251C /* Views */,
 				9D6C223B2BA18435009951DC /* small_red_bookApp.swift */,
 				9D6C223D2BA18435009951DC /* ContentView.swift */,
 				26C6BE622BA1E9DD00D0251C /* TabView.swift */,
@@ -147,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C6BE632BA1E9DD00D0251C /* TabView.swift in Sources */,
+				26C6BE6C2BA1F0DD00D0251C /* FollowView.swift in Sources */,
 				9D6C223E2BA18435009951DC /* ContentView.swift in Sources */,
 				9D6C224A2BA18E46009951DC /* Card.swift in Sources */,
+				26C6BE6E2BA1F13400D0251C /* VicinityView.swift in Sources */,
+				26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */,
+				26C6BE682BA1F00000D0251C /* HomeView.swift in Sources */,
 				9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */,
 				9D6C224C2BA1B490009951DC /* Tabbar.swift in Sources */,
 			);
