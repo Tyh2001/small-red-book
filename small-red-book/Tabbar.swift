@@ -38,14 +38,12 @@ struct Tabbar: View {
             
             Spacer()
             
-            Button {
-                
-            } label: {
+            Button {} label: {
                 Image(systemName: "plus")
                     .padding(.horizontal, 12)
                     .padding(.vertical, 6)
                     .foregroundStyle(.white)
-                    .background(.red,in: RoundedRectangle(cornerRadius: 8))
+                    .background(.red, in: RoundedRectangle(cornerRadius: 8))
             }
             
             Spacer()
@@ -67,7 +65,6 @@ struct Tabbar: View {
             }
             
             Spacer()
-
         }
         .foregroundStyle(.black)
     }

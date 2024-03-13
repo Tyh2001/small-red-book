@@ -70,44 +70,44 @@ struct ContentView: View {
                     .frame(minHeight: UIScreen.main.bounds.height)
                 }
                 .ignoresSafeArea() // 忽略安全区域
-                
+
                 Tabbar()
-                
+
                     .toolbar {
-                    // 标签
-                    ToolbarItem(placement: .principal) {
-                        HStack {
-                            Button {
-                                active = 1
-                            } label: {
-                                Text("关注")
-                                    .foregroundStyle(active == 1 ? .blue : .black)
-                            }
+                        // 标签
+                        ToolbarItem(placement: .principal) {
+                            HStack {
+                                Button {
+                                    active = 1
+                                } label: {
+                                    Text("关注")
+                                        .foregroundStyle(active == 1 ? .blue : .black)
+                                }
 
-                            Button {
-                                active = 2
-                            } label: {
-                                Text("发现")
-                                    .foregroundStyle(active == 2 ? .blue : .black)
-                            }
+                                Button {
+                                    active = 2
+                                } label: {
+                                    Text("发现")
+                                        .foregroundStyle(active == 2 ? .blue : .black)
+                                }
 
-                            Button {
-                                active = 3
-                            } label: {
-                                Text("附近")
-                                    .foregroundStyle(active == 3 ? .blue : .black)
+                                Button {
+                                    active = 3
+                                } label: {
+                                    Text("附近")
+                                        .foregroundStyle(active == 3 ? .blue : .black)
+                                }
+                            }
+                            .foregroundStyle(.black)
+                        }
+
+                        // 搜索按钮
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {} label: {
+                                Image(systemName: "magnifyingglass")
                             }
                         }
-                        .foregroundStyle(.black)
                     }
-
-                    // 搜索按钮
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {} label: {
-                            Image(systemName: "magnifyingglass")
-                        }
-                    }
-                }
             }
         }
     }
