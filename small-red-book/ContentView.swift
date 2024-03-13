@@ -13,6 +13,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView() {
+                
+                Color.clear.frame(height: 50)
+                
                 // 关注
                 TabView(selection: $active) {
                     HStack(alignment: .top, spacing: 4) {
@@ -64,11 +67,10 @@ struct ContentView: View {
                     .tag(3)
                 }
                 .tabViewStyle(.page)
-//                 .frame(minHeight: UIScene.main.bounds.height)
                 .frame(minHeight: UIScreen.main.bounds.height)
-                
-//                .frame(height: 1800)
+                // .frame(height: 1800)
             }
+            .ignoresSafeArea() // 忽略安全区域
             .toolbar {
                 // 标签
                 ToolbarItem(placement: .principal) {
