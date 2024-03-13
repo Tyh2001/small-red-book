@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // 头部标题切换
+                // 头部 tab 切换
                 HStack {
                     Button {} label: {
                         Image(systemName: "magnifyingglass")
