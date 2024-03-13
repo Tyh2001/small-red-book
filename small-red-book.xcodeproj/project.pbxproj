@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C6BE632BA1E9DD00D0251C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6BE622BA1E9DD00D0251C /* TabView.swift */; };
 		9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C223B2BA18435009951DC /* small_red_bookApp.swift */; };
 		9D6C223E2BA18435009951DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C223D2BA18435009951DC /* ContentView.swift */; };
 		9D6C22402BA18437009951DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6C223F2BA18437009951DC /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26C6BE622BA1E9DD00D0251C /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		9D6C22382BA18435009951DC /* small-red-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "small-red-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6C223B2BA18435009951DC /* small_red_bookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = small_red_bookApp.swift; sourceTree = "<group>"; };
 		9D6C223D2BA18435009951DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				9D6C223B2BA18435009951DC /* small_red_bookApp.swift */,
 				9D6C223D2BA18435009951DC /* ContentView.swift */,
+				26C6BE622BA1E9DD00D0251C /* TabView.swift */,
 				9D6C224B2BA1B490009951DC /* Tabbar.swift */,
 				9D6C22492BA18E46009951DC /* Card.swift */,
 				9D6C223F2BA18437009951DC /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C6BE632BA1E9DD00D0251C /* TabView.swift in Sources */,
 				9D6C223E2BA18435009951DC /* ContentView.swift in Sources */,
 				9D6C224A2BA18E46009951DC /* Card.swift in Sources */,
 				9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */,

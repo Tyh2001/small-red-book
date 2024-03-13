@@ -13,8 +13,49 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                // 头部标题切换
+                HStack {
+                    Button {} label: {
+                        Image(systemName: "magnifyingglass")
+                    }
+
+                    Spacer()
+
+                    HStack {
+                        Button {
+                            active = 1
+                        } label: {
+                            Text("关注")
+                                .foregroundStyle(active == 1 ? .blue : .black)
+                        }
+
+                        Button {
+                            active = 2
+                        } label: {
+                            Text("发现")
+                                .foregroundStyle(active == 2 ? .blue : .black)
+                        }
+
+                        Button {
+                            active = 3
+                        } label: {
+                            Text("附近")
+                                .foregroundStyle(active == 3 ? .blue : .black)
+                        }
+                    }
+                    .foregroundStyle(.black)
+
+                    Spacer()
+
+                    Button {} label: {
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
+                .padding(.horizontal, 20)
+
+                // 身体内容
                 ScrollView {
-                    Color.clear.frame(height: 50)
+                    // Color.clear.frame(height: 50)
 
                     // 关注
                     TabView(selection: $active) {
@@ -66,48 +107,13 @@ struct ContentView: View {
                         .background(.gray.opacity(0.1))
                         .tag(3)
                     }
-                    .tabViewStyle(.page)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
                     .frame(minHeight: UIScreen.main.bounds.height)
                 }
                 .ignoresSafeArea() // 忽略安全区域
 
+                //  底部切换
                 Tabbar()
-
-                    .toolbar {
-                        // 标签
-                        ToolbarItem(placement: .principal) {
-                            HStack {
-                                Button {
-                                    active = 1
-                                } label: {
-                                    Text("关注")
-                                        .foregroundStyle(active == 1 ? .blue : .black)
-                                }
-
-                                Button {
-                                    active = 2
-                                } label: {
-                                    Text("发现")
-                                        .foregroundStyle(active == 2 ? .blue : .black)
-                                }
-
-                                Button {
-                                    active = 3
-                                } label: {
-                                    Text("附近")
-                                        .foregroundStyle(active == 3 ? .blue : .black)
-                                }
-                            }
-                            .foregroundStyle(.black)
-                        }
-
-                        // 搜索按钮
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button {} label: {
-                                Image(systemName: "magnifyingglass")
-                            }
-                        }
-                    }
             }
         }
     }
