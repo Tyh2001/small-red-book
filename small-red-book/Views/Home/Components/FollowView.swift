@@ -16,7 +16,6 @@ struct FollowView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
                     ForEach(1 ..< 10) { _ in
-               
                         Button {} label: {
                             VStack {
                                 Image("avatar")
@@ -31,7 +30,7 @@ struct FollowView: View {
                 .padding(.vertical, 20)
                 .padding(.horizontal, 10)
             }
-            
+
             // 关注的人发布的内容
             VStack(spacing: 28) {
                 ForEach(1 ..< 10) { _ in

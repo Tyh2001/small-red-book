@@ -7,7 +7,6 @@
 //  关注发布的动态卡片
 //
 
-
 import SwiftUI
 
 struct ArticleCardView: View {

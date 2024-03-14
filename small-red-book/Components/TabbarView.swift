@@ -4,7 +4,7 @@
 //
 //  Created by 田宇浩 on 2024/3/14.
 //
-//  底部导航了切换
+//  底部导航栏切换
 //
 
 enum Selection {

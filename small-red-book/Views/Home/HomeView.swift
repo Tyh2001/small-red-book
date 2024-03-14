@@ -24,7 +24,7 @@ struct HomeView: View {
 
                     Spacer()
 
-                    HStack(spacing: 20){
+                    HStack(spacing: 20) {
                         Button {
                             active = 1
                         } label: {
@@ -56,7 +56,7 @@ struct HomeView: View {
                     }
                 }
                 .padding(.horizontal, 20)
-                
+
                 Divider() // 分界线
 
                 // 身体内容
