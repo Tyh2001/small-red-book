@@ -18,9 +18,10 @@
 		9D6C224F2BA29DD6009951DC /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C224E2BA29DD6009951DC /* ImageStyle.swift */; };
 		9D6C22542BA2DBD0009951DC /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22532BA2DBD0009951DC /* NavBarView.swift */; };
 		9D6C22562BA2DBE4009951DC /* NavBarPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22552BA2DBE4009951DC /* NavBarPopupView.swift */; };
-		9D6C22582BA2E93D009951DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22572BA2E93D009951DC /* CardView.swift */; };
 		9D6C225A2BA2E9C7009951DC /* ArticleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22592BA2E9C7009951DC /* ArticleCardView.swift */; };
 		9D6C225D2BA2EA95009951DC /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C225C2BA2EA95009951DC /* TabbarView.swift */; };
+		9D6C22602BA2F3B5009951DC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C225F2BA2F3B5009951DC /* MessageView.swift */; };
+		9D6C22642BA2F623009951DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22632BA2F623009951DC /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +37,10 @@
 		9D6C224E2BA29DD6009951DC /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
 		9D6C22532BA2DBD0009951DC /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		9D6C22552BA2DBE4009951DC /* NavBarPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarPopupView.swift; sourceTree = "<group>"; };
-		9D6C22572BA2E93D009951DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = ../../../../CardView.swift; sourceTree = "<group>"; };
 		9D6C22592BA2E9C7009951DC /* ArticleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCardView.swift; sourceTree = "<group>"; };
 		9D6C225C2BA2EA95009951DC /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		9D6C225F2BA2F3B5009951DC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		9D6C22632BA2F623009951DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		26C6BE642BA1EFB700D0251C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D6C225E2BA2F3A0009951DC /* Message */,
 				26C6BE662BA1EFE200D0251C /* Home */,
 			);
 			path = Views;
@@ -118,13 +121,13 @@
 		9D6C22522BA2DB55009951DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9D6C22572BA2E93D009951DC /* CardView.swift */,
 				26C6BE6D2BA1F13400D0251C /* VicinityView.swift */,
 				26C6BE6B2BA1F0DD00D0251C /* FollowView.swift */,
 				26C6BE692BA1F08100D0251C /* FindView.swift */,
 				9D6C22532BA2DBD0009951DC /* NavBarView.swift */,
 				9D6C22552BA2DBE4009951DC /* NavBarPopupView.swift */,
 				9D6C22592BA2E9C7009951DC /* ArticleCardView.swift */,
+				9D6C22632BA2F623009951DC /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -135,6 +138,14 @@
 				9D6C225C2BA2EA95009951DC /* TabbarView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9D6C225E2BA2F3A0009951DC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9D6C225F2BA2F3B5009951DC /* MessageView.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +223,10 @@
 				9D6C223E2BA18435009951DC /* ContentView.swift in Sources */,
 				9D6C22542BA2DBD0009951DC /* NavBarView.swift in Sources */,
 				9D6C22562BA2DBE4009951DC /* NavBarPopupView.swift in Sources */,
+				9D6C22602BA2F3B5009951DC /* MessageView.swift in Sources */,
 				26C6BE6E2BA1F13400D0251C /* VicinityView.swift in Sources */,
+				9D6C22642BA2F623009951DC /* CardView.swift in Sources */,
 				9D6C225A2BA2E9C7009951DC /* ArticleCardView.swift in Sources */,
-				9D6C22582BA2E93D009951DC /* CardView.swift in Sources */,
 				26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */,
 				26C6BE682BA1F00000D0251C /* HomeView.swift in Sources */,
 				9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */,

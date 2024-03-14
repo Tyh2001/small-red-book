@@ -79,7 +79,7 @@ struct HomeView: View {
                 TabbarView()
             }
         }
-        .navigationBarBackButtonHidden(true)
+        .toolbar(.hidden)
     }
 }
 

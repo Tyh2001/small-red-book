@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Card: View {
+struct CardView: View {
     var banner: String
     var title: String
     var avatar: String
@@ -35,7 +35,3 @@ struct Card: View {
         .background(.white)
     }
 }
-
-//#Preview {
-//    Card(size: 20)
-//}
