@@ -57,7 +57,7 @@ struct HomeView: View {
                 TabView(selection: $active) {
                     // 关注
                     FollowView()
-                        .tag(2)
+                        .tag(1)
 
                     // 发现
                     FindView()
