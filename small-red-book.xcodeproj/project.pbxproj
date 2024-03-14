@@ -23,6 +23,7 @@
 		9D6C22602BA2F3B5009951DC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C225F2BA2F3B5009951DC /* MessageView.swift */; };
 		9D6C22642BA2F623009951DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22632BA2F623009951DC /* CardView.swift */; };
 		9D6C22662BA3006C009951DC /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22652BA3006C009951DC /* TextStyle.swift */; };
+		9D6C22692BA307A0009951DC /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22682BA307A0009951DC /* MineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9D6C225F2BA2F3B5009951DC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		9D6C22632BA2F623009951DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9D6C22652BA3006C009951DC /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		9D6C22682BA307A0009951DC /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		26C6BE642BA1EFB700D0251C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D6C22672BA30772009951DC /* Mine */,
 				9D6C225E2BA2F3A0009951DC /* Message */,
 				26C6BE662BA1EFE200D0251C /* Home */,
 			);
@@ -151,6 +154,14 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		9D6C22672BA30772009951DC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9D6C22682BA307A0009951DC /* MineView.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +239,7 @@
 				9D6C22562BA2DBE4009951DC /* NavBarPopupView.swift in Sources */,
 				9D6C22602BA2F3B5009951DC /* MessageView.swift in Sources */,
 				26C6BE6E2BA1F13400D0251C /* VicinityView.swift in Sources */,
+				9D6C22692BA307A0009951DC /* MineView.swift in Sources */,
 				9D6C22642BA2F623009951DC /* CardView.swift in Sources */,
 				9D6C225A2BA2E9C7009951DC /* ArticleCardView.swift in Sources */,
 				26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */,
