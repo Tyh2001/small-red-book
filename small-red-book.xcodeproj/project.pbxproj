@@ -57,6 +57,7 @@
 		26C6BE652BA1EFCF00D0251C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9D6C22492BA18E46009951DC /* Card.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -97,7 +98,6 @@
 				9D6C223D2BA18435009951DC /* ContentView.swift */,
 				26C6BE622BA1E9DD00D0251C /* TabView.swift */,
 				9D6C224B2BA1B490009951DC /* Tabbar.swift */,
-				9D6C22492BA18E46009951DC /* Card.swift */,
 				9D6C223F2BA18437009951DC /* Assets.xcassets */,
 				9D6C22412BA18437009951DC /* Preview Content */,
 			);
