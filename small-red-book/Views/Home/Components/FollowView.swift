@@ -35,7 +35,7 @@ struct FollowView: View {
             // 关注的人发布的内容
             VStack(spacing: 28) {
                 ForEach(1 ..< 10) { _ in
-                    ArticleCard()
+                    ArticleCardView()
                 }
             }
         }

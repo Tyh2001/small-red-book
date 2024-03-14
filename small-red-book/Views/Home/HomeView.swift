@@ -76,7 +76,7 @@ struct HomeView: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
 
                 //  底部切换
-                Tabbar()
+                TabbarView()
             }
         }
         .navigationBarBackButtonHidden(true)

@@ -1,13 +1,16 @@
 //
-//  ArticleCard.swift
+//  ArticleCardView.swift
 //  small-red-book
 //
 //  Created by 田宇浩 on 2024/3/14.
 //
+//  关注发布的动态卡片
+//
+
 
 import SwiftUI
 
-struct ArticleCard: View {
+struct ArticleCardView: View {
     // 评论的内容
     @State var comment = ""
     
@@ -89,13 +92,12 @@ struct ArticleCard: View {
            
             .padding(.vertical, 6)
             .padding(.horizontal, 6)
-            .background(.gray.opacity(0.04),in: RoundedRectangle(cornerRadius: 25.0))
+            .background(.gray.opacity(0.04), in: RoundedRectangle(cornerRadius: 25.0))
             .padding(.horizontal, 12)
         }
     }
-
 }
 
 #Preview {
-    ArticleCard()
+    ArticleCardView()
 }
