@@ -22,6 +22,7 @@
 		9D6C225D2BA2EA95009951DC /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C225C2BA2EA95009951DC /* TabbarView.swift */; };
 		9D6C22602BA2F3B5009951DC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C225F2BA2F3B5009951DC /* MessageView.swift */; };
 		9D6C22642BA2F623009951DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22632BA2F623009951DC /* CardView.swift */; };
+		9D6C22662BA3006C009951DC /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22652BA3006C009951DC /* TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9D6C225C2BA2EA95009951DC /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		9D6C225F2BA2F3B5009951DC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		9D6C22632BA2F623009951DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9D6C22652BA3006C009951DC /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6C224E2BA29DD6009951DC /* ImageStyle.swift */,
+				9D6C22652BA3006C009951DC /* TextStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				9D6C22642BA2F623009951DC /* CardView.swift in Sources */,
 				9D6C225A2BA2E9C7009951DC /* ArticleCardView.swift in Sources */,
 				26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */,
+				9D6C22662BA3006C009951DC /* TextStyle.swift in Sources */,
 				26C6BE682BA1F00000D0251C /* HomeView.swift in Sources */,
 				9D6C223C2BA18435009951DC /* small_red_bookApp.swift in Sources */,
 				9D6C225D2BA2EA95009951DC /* TabbarView.swift in Sources */,
