@@ -23,10 +23,7 @@ struct Card: View {
             Text(title)
             HStack {
                 Image(avatar)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 18,height: 18)
-                    .mask(Circle())
+                    .CircleImage(size: 18)
                 Text(userName)
                 Spacer()
                 Image(systemName: "heart")

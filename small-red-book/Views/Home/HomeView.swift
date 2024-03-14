@@ -4,11 +4,13 @@
 //
 //  Created by Tyh2001 on 2024/3/13.
 //
+//  首页
+//
 
 import SwiftUI
 
 struct HomeView: View {
-    @State var active = 1
+    @State var active = 2
 
     var body: some View {
         NavigationView {
@@ -16,12 +18,13 @@ struct HomeView: View {
                 // 头部 tab 切换
                 HStack(spacing: 30) {
                     Button {} label: {
-                        Image(systemName: "sun.max")
+                        Image(systemName: "circle.circle")
+                            .foregroundStyle(.black)
                     }
 
                     Spacer()
 
-                    HStack {
+                    HStack(spacing: 20){
                         Button {
                             active = 1
                         } label: {
@@ -49,9 +52,12 @@ struct HomeView: View {
 
                     Button {} label: {
                         Image(systemName: "magnifyingglass")
+                            .foregroundStyle(.black)
                     }
                 }
                 .padding(.horizontal, 20)
+                
+                Divider() // 分界线
 
                 // 身体内容
                 TabView(selection: $active) {
