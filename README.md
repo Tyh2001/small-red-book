@@ -2,7 +2,7 @@
 
 ## 介绍
 
-使用 SwiftUI 开发的小红书 IOS 原生手机 App 项目。
+使用 SwiftUI 开发的小红书 IOS 原生手机 App。
 
 ## 实现功能
 
