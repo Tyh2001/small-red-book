@@ -28,7 +28,7 @@ struct TabbarView: View {
                 }
             } label: {
                 Text("首页")
-                    .SetTextStyle(size: active == .home ? 17 : 15, color: active == .home ? .black : .gray)
+                    .SetTextStyle(size: 16, color: active == .home ? .black : .gray)
             }
             
             Spacer()
@@ -39,7 +39,7 @@ struct TabbarView: View {
                 }
             } label: {
                 Text("购物")
-                    .SetTextStyle(size: active == .sopping ? 17 : 15, color: active == .sopping ? .black : .gray)
+                    .SetTextStyle(size: 16, color: active == .sopping ? .black : .gray)
             }
             
             Spacer()
@@ -61,7 +61,7 @@ struct TabbarView: View {
             } label: {
                 Text("消息")
                    
-                    .SetTextStyle(size: active == .message ? 17 : 15, color: active == .message ? .black : .gray)
+                    .SetTextStyle(size: 16, color: active == .message ? .black : .gray)
             }
       
             Spacer()
@@ -72,7 +72,7 @@ struct TabbarView: View {
                 }
             } label: {
                 Text("我")
-                    .SetTextStyle(size: active == .mine ? 17 : 15, color: active == .mine ? .black : .gray)
+                    .SetTextStyle(size: 16, color: active == .mine ? .black : .gray)
             }
             
             Spacer()

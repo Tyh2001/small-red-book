@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ArticleDetailView: View {
     @State var contentText = ""
+    @Binding var isShowArticleDetail: Bool
     
     var body: some View {
         NavigationView {
             VStack {
                 // 标题
                 HStack {
-                    Image(systemName: "chevron.backward")
+                    Button {
+                        withAnimation {
+                            isShowArticleDetail.toggle()
+                        }
+                    } label: {
+                        Image(systemName: "chevron.backward")
+                    }
                     Image("avatar")
                         .CircleImage(size: 25)
                     
@@ -26,9 +33,11 @@ struct ArticleDetailView: View {
                     Button {} label: {
                         Text("关注")
                             .SetTextStyle(size: 13, color: .red)
-                            .padding(.vertical, 4)
-                            .padding(.horizontal, 9)
-                            .border(.red, width: 1)
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 12)
+                            .background(.white)
+                            .padding(1)
+                            .background(.red, in: RoundedRectangle(cornerRadius: 15))
                     }
                     
                     Button {} label: {
@@ -195,5 +204,5 @@ struct ArticleDetailView: View {
 }
 
 #Preview {
-    ArticleDetailView()
+    ArticleDetailView(isShowArticleDetail: .constant(false))
 }
