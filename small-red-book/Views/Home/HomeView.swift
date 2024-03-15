@@ -29,21 +29,21 @@ struct HomeView: View {
                             active = 1
                         } label: {
                             Text("关注")
-                                .foregroundStyle(active == 1 ? .blue : .black)
+                                .foregroundStyle(active == 1 ? .black : .gray)
                         }
 
                         Button {
                             active = 2
                         } label: {
                             Text("发现")
-                                .foregroundStyle(active == 2 ? .blue : .black)
+                                .foregroundStyle(active == 2 ? .black : .gray)
                         }
 
                         Button {
                             active = 3
                         } label: {
                             Text("附近")
-                                .foregroundStyle(active == 3 ? .blue : .black)
+                                .foregroundStyle(active == 3 ? .black : .gray)
                         }
                     }
                     .foregroundStyle(.black)

@@ -15,23 +15,35 @@ struct CardView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            // 图片
             Image(banner)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: UIScreen.main.bounds.width / 2 - 22)
+                .frame(width: .infinity)
 
-            Text(title)
+            VStack(alignment: .leading) {
+                Text(title)
+                    .SetTextStyle(size: 15, color: .black.opacity(0.9))
 
-            HStack {
-                Image(avatar)
-                    .CircleImage(size: 18)
-                Text(userName)
-                Spacer()
-                Image(systemName: "heart")
+                HStack {
+                    Image(avatar)
+                        .CircleImage(size: 16)
+                    Text(userName)
+                        .SetTextStyle(size: 13, color: .gray)
+                    Spacer()
+                    Group {
+                        Image(systemName: "heart")
+                        Text("1246")
+                    }
+                    .foregroundStyle(.gray)
+                    .font(.system(size: 14))
+                }
             }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .padding(.bottom, 8)
         }
-        .padding(4)
-        .cornerRadius(8)
+        .cornerRadius(3)
         .background(.white)
     }
 }

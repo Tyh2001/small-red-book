@@ -17,13 +17,13 @@ struct NavBarView: View {
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                HStack(spacing: 16) {
                     ForEach(tags.indices, id: \.self) { index in
                         Button {
                             tagActiveIndex = index
                         } label: {
                             Text(tags[index])
-                                .foregroundStyle(tagActiveIndex == index ? .blue : .black.opacity(0.5))
+                                .SetTextStyle(size: tagActiveIndex == index ? 15 : 14, color: tagActiveIndex == index ? .black : .gray)
                         }
                     }
                 }

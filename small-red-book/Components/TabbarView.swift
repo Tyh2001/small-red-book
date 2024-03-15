@@ -23,19 +23,23 @@ struct TabbarView: View {
         HStack {
             Spacer()
             Button {
-                active = .home
+                withAnimation(.linear(duration: 0.1)) {
+                    active = .home
+                }
             } label: {
                 Text("首页")
-                    .foregroundStyle(active == .home ? .blue : .black)
+                    .SetTextStyle(size: active == .home ? 17 : 15, color: active == .home ? .black : .gray)
             }
             
             Spacer()
             
             Button {
-                active = .sopping
+                withAnimation(.linear(duration: 0.1)) {
+                    active = .sopping
+                }
             } label: {
                 Text("购物")
-                    .foregroundStyle(active == .sopping ? .blue : .black)
+                    .SetTextStyle(size: active == .sopping ? 17 : 15, color: active == .sopping ? .black : .gray)
             }
             
             Spacer()
@@ -51,19 +55,24 @@ struct TabbarView: View {
             Spacer()
             
             Button {
-                active = .message
+                withAnimation(.linear(duration: 0.1)) {
+                    active = .message
+                }
             } label: {
                 Text("消息")
-                    .foregroundStyle(active == .message ? .blue : .black)
+                   
+                    .SetTextStyle(size: active == .message ? 17 : 15, color: active == .message ? .black : .gray)
             }
       
             Spacer()
             
             Button {
-                active = .mine
+                withAnimation(.linear(duration: 0.1)) {
+                    active = .mine
+                }
             } label: {
                 Text("我")
-                    .foregroundStyle(active == .mine ? .blue : .black)
+                    .SetTextStyle(size: active == .mine ? 17 : 15, color: active == .mine ? .black : .gray)
             }
             
             Spacer()
