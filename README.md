@@ -28,4 +28,4 @@
 
 ## 贡献者
 
-- [Tyh2001](https://github.com/Tyh2001)
+[Tyh2001](https://github.com/Tyh2001)
