@@ -25,6 +25,7 @@
 		9D6C22642BA2F623009951DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22632BA2F623009951DC /* CardView.swift */; };
 		9D6C22662BA3006C009951DC /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22652BA3006C009951DC /* TextStyle.swift */; };
 		9D6C22692BA307A0009951DC /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C22682BA307A0009951DC /* MineView.swift */; };
+		9D6C226C2BA3EC2A009951DC /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C226B2BA3EC2A009951DC /* ArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9D6C22632BA2F623009951DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9D6C22652BA3006C009951DC /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		9D6C22682BA307A0009951DC /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		9D6C226B2BA3EC2A009951DC /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		26C6BE642BA1EFB700D0251C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D6C226A2BA3EC10009951DC /* ArticleDetail */,
 				26C6BE6F2BA3159C00D0251C /* Shopping */,
 				9D6C22672BA30772009951DC /* Mine */,
 				9D6C225E2BA2F3A0009951DC /* Message */,
@@ -173,6 +176,14 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		9D6C226A2BA3EC10009951DC /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9D6C226B2BA3EC2A009951DC /* ArticleDetailView.swift */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +264,7 @@
 				26C6BE6E2BA1F13400D0251C /* VicinityView.swift in Sources */,
 				9D6C22692BA307A0009951DC /* MineView.swift in Sources */,
 				9D6C22642BA2F623009951DC /* CardView.swift in Sources */,
+				9D6C226C2BA3EC2A009951DC /* ArticleDetailView.swift in Sources */,
 				9D6C225A2BA2E9C7009951DC /* ArticleCardView.swift in Sources */,
 				26C6BE6A2BA1F08100D0251C /* FindView.swift in Sources */,
 				9D6C22662BA3006C009951DC /* TextStyle.swift in Sources */,
