@@ -53,10 +53,8 @@ struct TabbarView: View {
             Button {
                 active = .message
             } label: {
-                NavigationLink(destination: MessageView()) {
-                    Text("消息")
-                        .foregroundStyle(active == .message ? .blue : .black)
-                }
+                Text("消息")
+                    .foregroundStyle(active == .message ? .blue : .black)
             }
       
             Spacer()
