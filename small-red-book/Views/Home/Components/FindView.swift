@@ -14,6 +14,7 @@ struct FindView: View {
     @State var tagActiveIndex = 0 // 标签选中的索引
     @State var isShowPopup = false // 是否显示对话框
     @Binding var isShowArticleDetail: Bool // 是否显示动态详情视图
+    var namespace: Namespace.ID
 
     var body: some View {
         ZStack {
@@ -33,25 +34,25 @@ struct FindView: View {
                         ScrollView {
                             HStack(alignment: .top, spacing: 4) {
                                 VStack {
-                                    CardView(banner: "image-1", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-1", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-4", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-4", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-2", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-2", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
@@ -59,25 +60,25 @@ struct FindView: View {
                                         }
                                 }
                                 VStack {
-                                    CardView(banner: "image-2", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-2", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-1", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-1", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
                                             }
                                         }
-                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三")
+                                    CardView(banner: "image-3", title: "风景很不错\(index)", avatar: "avatar", userName: "张三", namespace: namespace)
                                         .onTapGesture {
                                             withAnimation {
                                                 isShowArticleDetail.toggle()
@@ -95,12 +96,12 @@ struct FindView: View {
             }
             // 动态详情视图
             if isShowArticleDetail {
-                ArticleDetailView(isShowArticleDetail: $isShowArticleDetail)
+                ArticleDetailView(isShowArticleDetail: $isShowArticleDetail, namespace: namespace)
             }
         }
     }
 }
 
-#Preview {
-    FindView(isShowArticleDetail: .constant(false))
-}
+// #Preview {
+//    FindView(isShowArticleDetail: .constant(false))
+// }

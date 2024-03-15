@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ArticleDetailView: View {
-    @State var contentText = ""
-    @Binding var isShowArticleDetail: Bool
+    @State var contentText = "" // 评论内容
+    @State var dragValues = 0 // 拖动的距离
+    @Binding var isShowArticleDetail: Bool // 是否显示文章详情
+    var namespace: Namespace.ID
     
     var body: some View {
         NavigationView {
@@ -22,6 +24,7 @@ struct ArticleDetailView: View {
                         }
                     } label: {
                         Image(systemName: "chevron.backward")
+                            .foregroundStyle(.black)
                     }
                     Image("avatar")
                         .CircleImage(size: 25)
@@ -58,12 +61,13 @@ struct ArticleDetailView: View {
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
                         .aspectRatio(contentMode: .fill)
                         .clipped()
+//                        .matchedGeometryEffect(id: "articleBanner", in: namespace)
                     
                     // 内容部分
                     VStack(alignment: .leading) {
                         // 标题
                         HStack {
-                            Text("内容标题")
+                            Text("内容标题拖动距离\(dragValues)")
                                 .font(.title2)
                                 .bold()
                         }
@@ -198,11 +202,26 @@ struct ArticleDetailView: View {
                 .padding(.horizontal, 14)
                 .padding(.top, 2)
             }
+            // 监听页面显示
+            .onAppear {
+                print("页面显示了")
+            }
+            .gesture(
+                DragGesture()
+                    .onChanged { dragValue in
+                        dragValues = Int(dragValue.location.x)
+                    
+                        if dragValues > 100 {
+                            print("123")
+                            isShowArticleDetail.toggle()
+                        }
+                    }
+            )
         }
         .toolbar(.hidden)
     }
 }
-
-#Preview {
-    ArticleDetailView(isShowArticleDetail: .constant(false))
-}
+//
+//#Preview {
+//    ArticleDetailView(isShowArticleDetail: .constant(false))
+//}

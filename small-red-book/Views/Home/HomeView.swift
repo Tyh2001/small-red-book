@@ -12,6 +12,7 @@ import SwiftUI
 struct HomeView: View {
     @State var active = 2
     @State var isShowArticleDetail = false // 是否显示动态详情视图
+    @Namespace var namespace
 
     var body: some View {
         NavigationView {
@@ -68,7 +69,7 @@ struct HomeView: View {
                             .tag(1)
 
                         // 发现
-                        FindView(isShowArticleDetail: $isShowArticleDetail)
+                        FindView(isShowArticleDetail: $isShowArticleDetail, namespace: namespace)
                             .tag(2)
 
                         // 附近
@@ -83,7 +84,7 @@ struct HomeView: View {
 
                 // 动态详情视图
                 if isShowArticleDetail {
-                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail)
+                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail, namespace: namespace)
                 }
             }
         }
