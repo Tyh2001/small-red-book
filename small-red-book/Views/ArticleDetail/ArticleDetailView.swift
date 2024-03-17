@@ -11,7 +11,6 @@ struct ArticleDetailView: View {
     @State var contentText = "" // 评论内容
     @State var dragValues = 0 // 拖动的距离
     @Binding var isShowArticleDetail: Bool // 是否显示文章详情
-    var namespace: Namespace.ID
     
     var body: some View {
         NavigationView {
@@ -221,7 +220,7 @@ struct ArticleDetailView: View {
         .toolbar(.hidden)
     }
 }
-//
-//#Preview {
-//    ArticleDetailView(isShowArticleDetail: .constant(false))
-//}
+
+#Preview {
+    ArticleDetailView(isShowArticleDetail: .constant(false))
+}

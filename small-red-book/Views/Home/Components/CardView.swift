@@ -12,7 +12,6 @@ struct CardView: View {
     var title: String
     var avatar: String
     var userName: String
-    var namespace: Namespace.ID
 
     var body: some View {
         VStack(alignment: .leading) {
