@@ -93,4 +93,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(CardDataModel()) // 环境变量
 }

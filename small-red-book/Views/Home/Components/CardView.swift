@@ -8,28 +8,29 @@
 import SwiftUI
 
 struct CardView: View {
-    var banner: String
-    var title: String
-    var avatar: String
-    var userName: String
+//    var banner: String
+//    var title: String
+//    var avatar: String
+//    var userName: String
+    var data:CardData = CardData(id: 1, banner: "", title: "", avatar: "", userName: "")
 
     var body: some View {
         VStack(alignment: .leading) {
             // 图片
-            Image(banner)
+            Image(data.banner)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: .infinity)
             // .matchedGeometryEffect(id: "articleBanner", in: namespace)
 
             VStack(alignment: .leading) {
-                Text(title)
+                Text(data.title)
                     .SetTextStyle(size: 15, color: .black.opacity(0.9))
 
                 HStack {
-                    Image(avatar)
+                    Image(data.avatar)
                         .CircleImage(size: 16)
-                    Text(userName)
+                    Text(data.userName)
                         .SetTextStyle(size: 13, color: .gray)
                     Spacer()
                     Group {
