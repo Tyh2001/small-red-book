@@ -12,6 +12,7 @@ import SwiftUI
 struct HomeView: View {
     @State var active = 2
     @State var isShowArticleDetail = false // 是否显示动态详情视图
+    @EnvironmentObject var myCardDatas: CardDataModel // 数据
 
     var body: some View {
         NavigationView {
@@ -83,7 +84,7 @@ struct HomeView: View {
 
                 // 动态详情视图
                 if isShowArticleDetail {
-                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail)
+                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail, data: myCardDatas.cardDatas[myCardDatas.activeId - 1])
                 }
             }
         }

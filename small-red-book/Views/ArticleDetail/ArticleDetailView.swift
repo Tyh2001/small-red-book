@@ -11,6 +11,8 @@ struct ArticleDetailView: View {
     @State var contentText = "" // 评论内容
     @State var dragValues = 0 // 拖动的距离
     @Binding var isShowArticleDetail: Bool // 是否显示文章详情
+    @EnvironmentObject var myCardDatas: CardDataModel // 数据
+    var data: CardData = .init(id: 1, banner: "image-1", title: "标题1", avatar: "avatar", userName: "张三啊", content: "测试内容")
     
     var body: some View {
         NavigationView {
@@ -25,10 +27,10 @@ struct ArticleDetailView: View {
                         Image(systemName: "chevron.backward")
                             .foregroundStyle(.black)
                     }
-                    Image("avatar")
+                    Image(data.avatar)
                         .CircleImage(size: 25)
                     
-                    Text("用户名")
+                    Text(data.userName)
                     
                     Spacer()
                     
@@ -54,19 +56,19 @@ struct ArticleDetailView: View {
                 // 内容部分
                 ScrollView {
                     // 图片
-                    Image("image-1")
+                    Image(data.banner)
                         .resizable()
                         .resizable()
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
                         .aspectRatio(contentMode: .fill)
                         .clipped()
-//                        .matchedGeometryEffect(id: "articleBanner", in: namespace)
+                    // .matchedGeometryEffect(id: "articleBanner", in: namespace)
                     
                     // 内容部分
                     VStack(alignment: .leading) {
                         // 标题
                         HStack {
-                            Text("内容标题拖动距离\(dragValues)")
+                            Text(data.title)
                                 .font(.title2)
                                 .bold()
                         }
@@ -74,7 +76,7 @@ struct ArticleDetailView: View {
                         
                         // 内容
                         HStack {
-                            Text("这是内容啊这是内容啊这是内容啊这是内容啊这是内容啊这是内容啊这是内容啊这是内容啊")
+                            Text(data.title)
                                 .SetTextStyle(size: 16, color: .black.opacity(0.8))
                         }
                         .padding(.top, 4)

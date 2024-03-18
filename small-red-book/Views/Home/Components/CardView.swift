@@ -12,7 +12,7 @@ struct CardView: View {
 //    var title: String
 //    var avatar: String
 //    var userName: String
-    var data:CardData = CardData(id: 1, banner: "", title: "", avatar: "", userName: "")
+    var data: CardData = .init(id: 1, banner: "", title: "", avatar: "", userName: "", content: "")
 
     var body: some View {
         VStack(alignment: .leading) {

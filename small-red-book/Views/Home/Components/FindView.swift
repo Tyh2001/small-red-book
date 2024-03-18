@@ -39,6 +39,7 @@ struct FindView: View {
                                             CardView(data: item)
                                                 .onTapGesture {
                                                     withAnimation {
+                                                        myCardDatas.activeId = item.id
                                                         isShowArticleDetail.toggle()
                                                     }
                                                 }
@@ -51,6 +52,7 @@ struct FindView: View {
                                             CardView(data: item)
                                                 .onTapGesture {
                                                     withAnimation {
+                                                        myCardDatas.activeId = item.id
                                                         isShowArticleDetail.toggle()
                                                     }
                                                 }
