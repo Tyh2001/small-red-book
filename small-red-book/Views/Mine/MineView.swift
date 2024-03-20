@@ -205,8 +205,6 @@ struct MineView: View {
                     .background(.white, in: RoundedRectangle(cornerRadius: 20, style: .circular))
                 }
                 .offset(y: -25)
-
-                TabbarView()
             }
         }
         .toolbar(.hidden)

@@ -72,8 +72,6 @@ struct ShoppingView: View {
                     }
                     .background(.gray.opacity(0.1))
                 }
-
-                TabbarView()
             }
         }
         .toolbar(.hidden)

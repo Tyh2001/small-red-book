@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var active = 1
-
     var body: some View {
-        HomeView()
+        TabbarLayoutView()
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(CardDataModel()) // 环境变量
 }

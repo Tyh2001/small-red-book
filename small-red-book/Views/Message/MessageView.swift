@@ -118,8 +118,6 @@ struct MessageView: View {
                         .background(.white)
                     }
                 }
-
-                TabbarView()
             }
         }
         .toolbar(.hidden)

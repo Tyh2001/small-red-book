@@ -77,9 +77,6 @@ struct HomeView: View {
                             .tag(3)
                     }
                     .tabViewStyle(.page(indexDisplayMode: .never))
-
-                    //  底部切换
-                    TabbarView()
                 }
 
                 // 动态详情视图

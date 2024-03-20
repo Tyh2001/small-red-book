@@ -7,21 +7,15 @@
 //  底部导航栏切换
 //
 
-enum Selection {
-    case home
-    case sopping
-    case message
-    case mine
-}
-
 import SwiftUI
 
 struct TabbarView: View {
-    @State var active: Selection = .home
+    @Binding var active: Selection
     
     var body: some View {
         HStack {
             Spacer()
+            
             Button {
                 withAnimation(.linear(duration: 0.1)) {
                     active = .home
@@ -34,14 +28,12 @@ struct TabbarView: View {
             Spacer()
             
             Button {
-                withAnimation(.linear(duration: 0.1)) {
-                    active = .sopping
-                }
+                active = .sopping
             } label: {
                 Text("购物")
                     .SetTextStyle(size: 16, color: active == .sopping ? .black : .gray)
             }
-            
+
             Spacer()
             
             Button {} label: {
@@ -60,7 +52,6 @@ struct TabbarView: View {
                 }
             } label: {
                 Text("消息")
-                   
                     .SetTextStyle(size: 16, color: active == .message ? .black : .gray)
             }
       
@@ -81,6 +72,6 @@ struct TabbarView: View {
     }
 }
 
-#Preview {
-    TabbarView()
-}
+// #Preview {
+//    TabbarView()
+// }
