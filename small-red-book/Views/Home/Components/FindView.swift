@@ -14,7 +14,7 @@ struct FindView: View {
     @State var tagActiveIndex = 0 // 标签选中的索引
     @State var isShowPopup = false // 是否显示对话框
     @Binding var isShowArticleDetail: Bool // 是否显示动态详情视图
-    @EnvironmentObject var myCardDatas: CardDataModel // 数据
+//    @EnvironmentObject var myCardDatas: CardDataModel // 数据
 
     var body: some View {
         ZStack {
@@ -33,32 +33,32 @@ struct FindView: View {
                     ForEach(tags.indices, id: \.self) { index in
                         ScrollView {
                             HStack(alignment: .top, spacing: 4) {
-                                VStack {
-                                    ForEach(myCardDatas.cardDatas) { item in
-                                        if item.id % 2 != 0 {
-                                            CardView(data: item)
-                                                .onTapGesture {
-                                                    withAnimation {
-                                                        myCardDatas.activeId = item.id
-                                                        isShowArticleDetail.toggle()
-                                                    }
-                                                }
-                                        }
-                                    }
-                                }
-                                VStack {
-                                    ForEach(myCardDatas.cardDatas) { item in
-                                        if item.id % 2 == 0 {
-                                            CardView(data: item)
-                                                .onTapGesture {
-                                                    withAnimation {
-                                                        myCardDatas.activeId = item.id
-                                                        isShowArticleDetail.toggle()
-                                                    }
-                                                }
-                                        }
-                                    }
-                                }
+//                                VStack {
+//                                    ForEach(myCardDatas.cardDatas) { item in
+//                                        if item.id % 2 != 0 {
+//                                            CardView(data: item)
+//                                                .onTapGesture {
+//                                                    withAnimation {
+//                                                        myCardDatas.activeId = item.id
+//                                                        isShowArticleDetail.toggle()
+//                                                    }
+//                                                }
+//                                        }
+//                                    }
+                            }
+                            VStack {
+//                                    ForEach(myCardDatas.cardDatas) { item in
+//                                        if item.id % 2 == 0 {
+//                                            CardView(data: item)
+//                                                .onTapGesture {
+//                                                    withAnimation {
+//                                                        myCardDatas.activeId = item.id
+//                                                        isShowArticleDetail.toggle()
+//                                                    }
+//                                                }
+//                                        }
+//                                    }
+//                                }
                             }
                             .background(.gray.opacity(0.04))
                             .padding(.horizontal, 4)

@@ -71,6 +71,7 @@ struct HomeView: View {
                         // 发现
                         FindView(isShowArticleDetail: $isShowArticleDetail)
                             .tag(2)
+//                            .environmentObject(CardDataModel()) // 环境变量
 
                         // 附近
                         VicinityView()
