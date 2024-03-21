@@ -17,9 +17,7 @@ struct TabbarView: View {
             Spacer()
             
             Button {
-                withAnimation(.linear(duration: 0.1)) {
-                    active = .home
-                }
+                active = .home
             } label: {
                 Text("首页")
                     .SetTextStyle(size: 16, color: active == .home ? .black : .gray)
@@ -47,9 +45,7 @@ struct TabbarView: View {
             Spacer()
             
             Button {
-                withAnimation(.linear(duration: 0.1)) {
-                    active = .message
-                }
+                active = .message
             } label: {
                 Text("消息")
                     .SetTextStyle(size: 16, color: active == .message ? .black : .gray)
@@ -58,9 +54,7 @@ struct TabbarView: View {
             Spacer()
             
             Button {
-                withAnimation(.linear(duration: 0.1)) {
-                    active = .mine
-                }
+                active = .mine
             } label: {
                 Text("我")
                     .SetTextStyle(size: 16, color: active == .mine ? .black : .gray)
