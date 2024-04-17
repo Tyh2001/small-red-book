@@ -11,8 +11,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var active = 2
-    @State var isShowArticleDetail = false // 是否显示动态详情视图
-    @EnvironmentObject var myCardDatas: CardDataModel // 数据
+//    @EnvironmentObject var myCardDatas: CardDataModel // 数据
 
     var body: some View {
         NavigationView {
@@ -69,9 +68,8 @@ struct HomeView: View {
                             .tag(1)
 
                         // 发现
-                        FindView(isShowArticleDetail: $isShowArticleDetail)
+                        FindView()
                             .tag(2)
-//                            .environmentObject(CardDataModel()) // 环境变量
 
                         // 附近
                         VicinityView()
@@ -81,9 +79,9 @@ struct HomeView: View {
                 }
 
                 // 动态详情视图
-                if isShowArticleDetail {
-                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail, data: myCardDatas.cardDatas[myCardDatas.activeId - 1])
-                }
+//                if isShowArticleDetail {
+//                    ArticleDetailView(isShowArticleDetail: $isShowArticleDetail, data: myCardDatas.cardDatas[myCardDatas.activeId - 1])
+//                }
             }
         }
         .toolbar(.hidden)
@@ -92,5 +90,4 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
-        .environmentObject(CardDataModel()) // 环境变量
 }
